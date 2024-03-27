@@ -34,6 +34,8 @@
 ![스크린샷 2024-03-28 041316](https://github.com/SangHyeokNam/CNN/assets/149642144/a2b2f5fb-856d-4176-840b-8772e143e689)
 > * 패치를 찾으면 필터와 요소별 곱셈을 수행한 후, 나온 행렬의 요소들을 모두 더합니다. 더하여 나온 값은 feature map의 요소가 되며, 필터를 슬라이딩하여 적용하면 원래 이미지의 정보를 보존한 새로운 feature map이 만들어집니다.
 ## 5. Convolution neural networks
+CNN의 단계별 세 가지 주요 작업
+![스크린샷 2024-03-28 044905](https://github.com/SangHyeokNam/CNN/assets/149642144/8a7b0169-f599-4c88-8638-8d285e2ae4ef)
 > * 
 
 
