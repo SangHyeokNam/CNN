@@ -30,6 +30,10 @@
 
 ![스크린샷 2024-03-28 040112](https://github.com/SangHyeokNam/CNN/assets/149642144/d2cc4bd3-1700-4eb0-906c-3add5bfc78fb)
 > * 필터를 사용하여 찾고자하는 패치를 포착할 수 있으며, 위 3가지 필터는 X의 경우 패치를 찾는데 적합한 필터입니다. 따라서 위 필터를 통해 X 이미지가 변환이 되어도 특징을 찾을 수 있습니다.
+
+![스크린샷 2024-03-28 041316](https://github.com/SangHyeokNam/CNN/assets/149642144/a2b2f5fb-856d-4176-840b-8772e143e689)
+> * 패치를 찾으면 필터와 요소별 곱셈을 수행한 후, 나온 행렬의 요소들을 모두 더합니다.
 ## 5. The convolution operation
+> * 
 
 
