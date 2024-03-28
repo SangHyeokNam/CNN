@@ -43,5 +43,8 @@ CNN의 단계별 세 가지 주요 작업
 > * 요소별 곱셈과 덧셈을 하고, 슬라이딩하며 연산하는 것이 Convolution layer의 기초입니다.
 ## 6. Non-linearity and pooling
 > * 이미지 데이터는 비선형적이고, 비선형 데이터를 처리하기 위해 비선형성을 적용하는 것이 중요합니다.
-> * Convolution layer의 경우 일반적으로 사용되는 활성화 함수는 Relu 함수입니다. Sigmoid 함수가 아닌 Relu 함수를 사용하는 이유는 역전파에서 sigmoid 함수를 사용할 때 기울기 소실 문제인 <b>Vanishing Gradient</b> 현상이 발생하기 때문입니다.
+> * Convolution layer의 경우 일반적으로 사용되는 활성화 함수는 Relu 함수입니다. Sigmoid 함수가 아닌 Relu 함수를 사용하는 이유는 역전파(Backpropagation)과정에서 출력층에서 멀어질수록 Gradient 값이 매우 작아지는 <b>Vanishing Gradient</b>(기울기 소실)현상이 발생하기 때문입니다.
+
+
+> * Sigmoid 함수의 미분 값은 입력값이 0일 때 가장 크지만 0.25에 불과하며, x값이 점점 커지거나 작아짐에 따라 0에 수렴해가는 것을 볼 수 있습니다. 따라서 출력층과 멀어질수록 Gradient값이 매우 작아집니다.
 
