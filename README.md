@@ -72,7 +72,7 @@ CNN의 단계별 세 가지 주요 작업
 > * 예를 들어 임의의 객체에 bounding box를 배치하고, 분류를 수행하여 무엇인지 감지할 수 있습니다. 이미지의 모든 무작위 bounding box에 대하여 이 프로세스를 반복합니다.
 > * 여기서 문제는 무작위 객체가 너무 많다는 것입니다. 이를 보완하기 위해 Selective search 알고리즘을 이용해 이미지에서 객체가 있을 것 같은 위치에 bounding box를 생성하는 R-CNN이 있습니다.
 > * Selective search 알고리즘은 물체가 있을만한 영역을 모두 조사해보는 Exhaustive Search 방법에 Segmetation을 결합해 개선한 알고리즘으로, 객체가 있을만한 후보 영역을 미리 찾고 그 영역 내에서만 객체를 찾는 Region Proposal 방식의 방법 중 하나입니다.
-![스크린샷 2024-04-02 030140](https://github.com/SangHyeokNam/CNN/assets/149642144/23928d11-4744-470c-8d5c-d19c796758dd
+![스크린샷 2024-04-02 030140](https://github.com/SangHyeokNam/CNN/assets/149642144/23928d11-4744-470c-8d5c-d19c796758dd)
 > * R-CNN은 Region proposal로 추출한 수많은 개수의 영역을 모두 CNN에 통과시키기 때문에 오래걸리며, 객체의 비율을 고려하지 않고 모두 같은 크기로 resize하여 정보를 손실할 수 있다는 단점이 있습니다.
 
 > * Fast R-CNN은 전체 이미지에 대해 CNN을 한번 거친 후 출력 된 Feature map에서 객체 탐지를 수행하여 R-CNN의 단점을 보완했으며, Fast R-CNN 역시 CNN Network가 아닌 Selective search 외부 알고리즘을 사용하여 병목현상이 발생하는 단점이 있습니다.
