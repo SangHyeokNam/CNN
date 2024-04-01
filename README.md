@@ -83,4 +83,18 @@ CNN의 단계별 세 가지 주요 작업
 > > 1) 원본 이미지를 pre-trained된 CNN 모델에 입력하여 feature map이 추출됩니다.
 > > 2) feature map은 RPN에 전달되어 적절한 region proposals을 산출합니다.
 > > 3) Region proposals와 1) 과정에서 얻은 feature map을 통해 RoI pooling을 수행하여 고정된 크기의 feature map을 얻습니다.
-> > 4) Fast R-CNN 모델에 고정된 크기의 feature map을 입력하여 Classification과 Bounding box regression을 수행합니다. 
+> > 4) Fast R-CNN 모델에 고정된 크기의 feature map을 입력하여 Classification(분할)과 Bounding box regression(회귀)을 수행합니다. 
+
+> * RPN은 feature map을 input으로, RP를 output으로 하는 네트워크라고 할 수 있고, selective search의 역할을 온전히 대체합니다.
+> * RoI Pooling은 feature map의 proposal region에서 미리 정해놓은 크기(FC layer의 input 사이즈)의 격자(grid)에 맞추어 maxpooling 하여 고정된 크기의 vector를 만들어냅니다. proposal region은 사이즈가 제각각이기 때문에 고정된 사이즈로 만들어주기 위해 사용합니다.
+## 10. Semantic segmentation
+> * 또 한 Object detection과 함께 자율주행, 의료 등에서 가장 많이 활용되고 있는 Semantic segmentation(의미적 분할)이 있습니다.
+> * Object detection이 이미지 내 특정 영역에 대한 분류 결과를 보여준다면, Semantic segmentation은 이미지 내 모든 픽셀에 대한 분류 결과를 보여줍니다. 따라서 이미지의 각 부분이 어떤 의미를 가지고 있는 지 구분할 수 있게 합니다.
+> * Semantic segmentation은 같은 Class에 속하는 Object를 따로 분류하지 않으며 픽셀이 어떤 클래스인 지만 구분합니다.
+> * Semantic segmentation을 위한 학습데이터 만드는 과정
+> > 1) Semantic segmentation의 Class(의미 종류)를 설정합니다.
+> > 2) 원본 이미지를 미리 정의해둔 Class에 따라 픽셀 단위로 구분합니다.
+> > 3) Class에 따라 픽셀의 RGB 값이 변경된 가공 이미지를 생성합니다.
+> > 4) Class와 RGB 값의 매핑 정보를 생성합니다.
+## 11. Summary
+> * 지금까지 기능 추출 및 감지의 핵심 개념과 CNN architecture(구조), Object detection을 배웠습니다.
