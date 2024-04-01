@@ -78,8 +78,8 @@ CNN의 단계별 세 가지 주요 작업
 > * Fast R-CNN은 전체 이미지에 대해 CNN을 한번 거친 후 출력 된 Feature map에서 객체 탐지를 수행하여 R-CNN의 단점을 보완했으며, Fast R-CNN 역시 CNN Network가 아닌 Selective search 외부 알고리즘을 사용하여 병목현상이 발생하는 단점이 있습니다.
 
 > * 따라서 selective search 알고리즘을 사용하지 않고, Region Proposal Network(RPN)를 통해서 RoI(Region of Interest)를 계산하여 Fast R-CNN의 단점을 개선하는 Faster R-CNN이 요점입니다.
-
-
+![스크린샷 2024-04-02 041437](https://github.com/SangHyeokNam/CNN/assets/149642144/80793c49-fc3d-4f70-93a1-256c07b00231)
+> * 네트워크 구조
 > > 1) 원본 이미지를 pre-trained된 CNN 모델에 입력하여 feature map이 추출됩니다.
 > > 2) feature map은 RPN에 전달되어 적절한 region proposals을 산출합니다.
 > > 3) Region proposals와 1) 과정에서 얻은 feature map을 통해 RoI pooling을 수행하여 고정된 크기의 feature map을 얻습니다.
