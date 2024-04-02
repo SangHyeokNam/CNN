@@ -97,4 +97,4 @@ CNN의 단계별 세 가지 주요 작업
 > > 3) Class에 따라 픽셀의 RGB 값이 변경된 가공 이미지를 생성합니다.
 > > 4) Class와 RGB 값의 매핑 정보를 생성합니다.
 ## 11. Summary
-> * 지금까지 기능 추출 및 감지의 핵심 개념과 CNN architecture(구조), Object detection을 배웠습니다.
+> * 지금까지 기능 추출 및 감지의 핵심 개념과 CNN architecture(구조), Object detection등을 배웠습니다.
